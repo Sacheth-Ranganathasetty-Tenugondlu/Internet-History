@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.o">
+    <title>introduction page</title>
+    <style>
+        .container{
+            margin: 0px;
+            width: 100vw;
+            height: 100vh;
+            font-family: "Times New Roman";
+            font-weight: bold;
+
+            display: grid;
+
+            grid-template-rows: 120px 1fr 1fr 100px;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+        .container div{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-image: url("header1.jpg");
+            color: indianred;
+        }
+        .header ul li{
+            text-align: right;
+            color: white;
+        }
+        .content-large{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            font-size: 22px;
+            color: whitesmoke;
+            background-color: coral;
+        }
+
+        body{
+            background: white;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: yellow;
+            text-align: center;
+            font-size: 20px;
+        }
+        .footer ul li{
+            color: ghostwhite;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header" >
+        <h1>
+            HISTORY OF THE INTERNET - BROWSER WARS
+        </h1>
+        <ul><li>
+            <a href="page%203.html">browserwar</a>
+        </li></ul>
+    </div>
+
+    <div class="content-large">
+
+        <p> Netscape began soon after software engineer Marc Andreessen graduated from the University of Illinois in 1994. So not long after he left Illinois, Andreessen was contacted by Jim Clark. They went back to NCSA, and walked out with a team of top engineers ready to make that happen. Originally slated to be called Mosaic, the browser they released to the world became known (mostly for legal reasons) as Netscape Navigator, and the company, Netscape Communications. By version 2.0, released in August of 1995, they had added HTML frames, image maps, and probably most impressively, the first ever iteration of Javascript. But by the middle of 1995, Netscape had jumped to an 80% share of the market. It might seem short-sighted now, but at the time, coding for Netscape was the only way to go.
+            Microsoft had largely ignored the web for some time. Bill Gates failed to recognize the importance of this new network early on, so the company fell back on their core competency: personal computing. Gates in May of 1995 sent out a memo to all Microsoft employees titled “The Internet Tidal Wave.” Bolstered by support from the very top of their company, a few Microsoft engineers got together to start working on a new browser. And that is why a few of them ended up at a meeting at Netscape.
+        </p>
+
+
+    </div>
+    <div class="footer">
+        Done by: Sacheth TR
+    </div>
+</div>
+</body>
+</html>
